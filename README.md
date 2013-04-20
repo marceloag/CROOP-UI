@@ -10,4 +10,4 @@ The iconic fonts was made with the wonderful [Fontello](http://fontello.com/)
 
 ---
 
-From Chile with <3 | [@marceloag](http://www.twitter.com/marceloag)
+From Chile with <3 | Follow Me (Escribo en español oe) [@marceloag](http://www.twitter.com/marceloag)
