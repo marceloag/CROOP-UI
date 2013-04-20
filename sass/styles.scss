@@ -119,7 +119,6 @@ a{
 	}
 }
 .icons{
-	margin: 0;
 	padding: 0;
 	li{
 		list-style: none;
@@ -151,7 +150,47 @@ a{
 		}
 	}
 }
-
+.iconsquare{
+	padding: 0;
+	text-align: center;
+	li{
+		list-style: none;
+		display: inline-block;
+		a{
+			$height:100px;
+			$circleheight:$height/2;
+			width: $height;
+			height: $height/2;
+			margin: 0 .5em 0 0;
+			display: block;
+			background-color: $colormenu;
+			padding: $height/4 0 $height/4 0;
+			color: (#FDEDD0 + 40);
+			text-decoration: none;
+			text-align: center;
+			font-family: 'Icons';
+			font-weight: 300;
+			font-size: 2em;
+			@include single-text-shadow($hovermenu, 1px, 1px, 0);
+			@include transition-property(all);
+			@include transition-duration(.2s);
+			@include transition-timing-function(ease-in);
+			// text-transform: uppercase;
+			border-bottom: 2px solid $hovermenu;
+			&:hover{
+				background-color: $hovermenu ;
+				@include scale(1.2); 
+			}
+			b{
+				font-family: 'Lato';
+				font-size: .4em !important;
+				display: block;
+				font-weight: 300;
+				margin-top: .4em;
+			}
+		}
+	}
+}
 input{
 	font-size: 1em;
 	padding: 1em;
