@@ -2,7 +2,7 @@
 
 A Flat UI set powered by SASS / COMPASS
 
-Live Demo
+[Live Demo](http://www.croop.cl/UI)
 
 ---
 

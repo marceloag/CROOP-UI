@@ -6,6 +6,23 @@
 
 @include font-face("Icons", font-files("fontello.eot", "fontello.svg","fontello.woff","fontello.ttf"));
 
+body{
+	font-family: 'Lato';
+	font-weight: 200;
+}
+
+h1{
+	font-weight: bolder;
+	font-size: 3em;
+	color: $textcolor;
+	@include text-shadow(white 1px 1px 0);
+}
+
+
+a{
+	text-decoration: underline;
+	color: $colormenu;
+}
 
 .nav{
 	margin: 1em 0;
@@ -83,4 +100,5 @@ input{
 	border: 1px solid #d6d6d6;
 	background-color: #f5f5f5;
 	padding: 1em;
+	color: $textcolor - 60 ;
 }
