@@ -1,0 +1,8 @@
+// MIXINS
+
+@mixin circle($width : 100px, $color : #CC0066) {
+width: $width;
+height: $width;
+background: $color;
+@include border-radius($width);
+}

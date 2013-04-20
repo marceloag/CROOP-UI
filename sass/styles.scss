@@ -1,0 +1,86 @@
+@import "compass/css3";
+
+@import "settings";
+@import "layout";
+@import "mixins";
+
+@include font-face("Icons", font-files("fontello.eot", "fontello.svg","fontello.woff","fontello.ttf"));
+
+
+.nav{
+	margin: 1em 0;
+	padding: 0;
+	li{
+		list-style: none;
+		display: inline-block;
+		a{
+			display: block;
+			margin: 0 .5em 0 0;
+			background-color: $colormenu;
+			color: (#FDEDD0 + 40);
+			text-decoration: none;
+			padding: 1.5em .8em;
+			font-family: 'Lato';
+			font-weight: 300;
+			@include single-text-shadow($hovermenu, 1px, 1px, 0);
+			@include transition-property(all);
+			@include transition-duration(.2s);
+			@include transition-timing-function(ease-in);
+			text-transform: uppercase;
+			border-bottom: 2px solid $hovermenu;
+			&:hover{
+				background-color: $hovermenu ;
+			}
+		}
+	}
+}
+
+.icons{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+		display: inline-block;
+		a{
+			$height:40px;
+			$circleheight:$height/2;
+			margin: 0 .5em 0 0;
+			display: block;
+			 @include circle( $circleheight, #443762);
+			background-color: $colormenu;
+			padding: $height/4;
+			color: (#FDEDD0 + 40);
+			text-decoration: none;
+			text-align: center;
+			// padding: 1.5em .8em;
+			font-family: 'Icons';
+			font-weight: 300;
+			@include single-text-shadow($hovermenu, 1px, 1px, 0);
+			@include transition-property(all);
+			@include transition-duration(.2s);
+			@include transition-timing-function(ease-in);
+			// text-transform: uppercase;
+			border-bottom: 2px solid $hovermenu;
+			&:hover{
+				background-color: $hovermenu ;
+				@include scale(1.2); 
+			}
+		}
+	}
+}
+
+input{
+	font-size: 1em;
+	padding: 1em;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	margin: 1em 0;
+	font-weight: 400;
+	color: #616161;
+}
+
+.panel{
+	border: 1px solid #d6d6d6;
+	background-color: #f5f5f5;
+	padding: 1em;
+}
