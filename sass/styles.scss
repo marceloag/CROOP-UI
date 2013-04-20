@@ -19,6 +19,15 @@ h1{
 	@include text-shadow(white 1px 1px 0);
 }
 
+@for $i from 0 through 5{
+    h#{$i + 1} {
+    	$valor: 3-(.375 * $i);
+		font-size: #{$valor}em;
+		margin: 0;
+		color: $textcolor;
+		@include text-shadow(white 1px 1px 0);
+    }
+}
 
 a{
 	text-decoration: underline;

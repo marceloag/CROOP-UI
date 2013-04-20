@@ -23,6 +23,12 @@ input{
 .nav, .vnav, .hllist, .icons, .iconsquare{
 	text-align: center;
 }
-.vnav, .icons, .iconsquare{
+.vnav, .icons, .iconsquare, .headings{
 	margin: 1em auto;
+}
+
+@for $i from 0 through 5{
+    .headings h#{$i + 1} {
+		text-align: center;
+    }
 }
