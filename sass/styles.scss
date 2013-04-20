@@ -82,11 +82,24 @@ a{
 				background-color: $hovermenu ;
 			}
 		}
+
 	}
-	&:last-child{
-		border-bottom: none !important;
-	}
+
 }
+
+.vnav li:last-child{
+	border-bottom: none !important;
+	a{
+		@include border-bottom-radius(.3em); 
+	} 
+}
+
+.vnav li:first-child{
+	a{
+		@include border-top-radius(.3em); 
+	} 
+}
+
 .hllist{
 	margin: 1em 0;
 	padding: 0;
@@ -148,6 +161,16 @@ input{
 	font-weight: 400;
 	color: #616161;
 	display: block;
+	background-color: #f3f3f3;
+	@include transition-property(all);
+	@include transition-duration(.4s);
+	@include transition-timing-function(ease-in);
+	&:focus{
+		outline:none;
+		@include box-shadow($colormenu + 100 0 0 5px); 
+		border: 1px solid $colormenu;
+		background-color: white;
+	}
 }
 
 textarea{
@@ -159,8 +182,22 @@ textarea{
 	background-color: $bgpanel;
 	padding: 1em;
 	color: $textcolor - 60 ;
+	width: 100%;
 }
 
+.button{
+	display: inline-block;
+	width: auto !important;
+	margin: 1em;
+	background-color: $colormenu;
+	@include border-radius(.3em);
+	padding: 1em;
+	color: white;
+	&:hover{
+		background-color: $hovermenu;
+		cursor: pointer;
+	}
+}
 blockquote{
 	margin-left: 1em;
 	border-left: $bgpanel - 80 .5em solid;
