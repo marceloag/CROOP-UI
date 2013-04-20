@@ -1,11 +1,28 @@
 body{
-	font-size: 16px;
+	font-size: $fontsize;
 	font-family: "Lato";
 	background-color: #f4f4f4;
 }
 
 
 .container{
-	width: 960px;
+	width: 500px;
 	margin: auto;
+}
+
+input{
+	width: 100%;
+}
+
+.title{
+	text-align: center;
+	font-size: 4em !important;
+	margin: .2em 0;
+}
+
+.nav, .vnav, .hllist, .icons{
+	text-align: center;
+}
+.vnav{
+	margin: 1em auto;
 }
