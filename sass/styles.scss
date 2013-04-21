@@ -13,7 +13,6 @@ body{
 }
 
 h1{
-	font-weight: bolder;
 	font-size: 3em;
 	color: $textcolor;
 	@include text-shadow(white 1px 1px 0);
