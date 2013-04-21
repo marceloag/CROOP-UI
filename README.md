@@ -10,7 +10,7 @@ The iconic fonts was made with the wonderful [Fontello](http://fontello.com/)
 
 ##Works on
 
-IE9+, Firefox and Chrome
+IE9+, Firefox Chrome & Safari  // You know, real browsers
 
 ---
 
