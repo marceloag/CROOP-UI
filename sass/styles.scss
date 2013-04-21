@@ -41,7 +41,6 @@ a{
 }
 
 .nav{
-	margin: 1em auto;
 	padding: 0;
 	text-align: center;
 	li{
@@ -404,4 +403,25 @@ blockquote{
 }
 .next{
 	right:0;
+}
+
+
+
+.nav li ul{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	@include transition-property(all);
+	@include transition-duration(.2s);
+	@include transition-timing-function(ease-in-out);
+	li{
+		display: block !important;
+		width: 100% !important;
+	}
+	
+}
+
+.nav li:hover ul, .nav li:focus ul{
+	opacity: 1;
 }
