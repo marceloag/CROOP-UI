@@ -1,11 +1,11 @@
 @import "compass/css3";
 
+@include font-face("Icons", font-files("fontello.eot", "fontello.svg","fontello.woff","fontello.ttf"));
+
 @import "settings";
 @import "mixins";
 @import "layout";
 
-
-@include font-face("Icons", font-files("fontello.eot", "fontello.svg","fontello.woff","fontello.ttf"));
 
 body{
 	font-family: $primaryfont;
