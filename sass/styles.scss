@@ -45,6 +45,8 @@ a{
 	li{
 		list-style: none;
 		display: inline-block;
+		overflow: hidden;
+		height: auto;
 		a{
 			display: block;
 			margin: 0 .5em 0 0;
@@ -406,11 +408,12 @@ blockquote{
 
 
 
-.nav li ul{
+.submenu{
 	position: absolute;
 	margin: 0;
 	padding: 0;
 	opacity: 0;
+	visibility: hidden;
 	@include transition-property(all);
 	@include transition-duration(.2s);
 	@include transition-timing-function(ease-in-out);
@@ -421,6 +424,16 @@ blockquote{
 	
 }
 
-.nav li:hover ul, .nav li:focus ul{
+.nav li:hover .submenu, .nav li:focus .submenu{
 	opacity: 1;
+	overflow: hidden;
+	visibility: visible;
 }
+.half{
+	width: 40% !important;
+	float: left;
+
+}
+input:first-child{
+		margin-right: 3%;
+	}

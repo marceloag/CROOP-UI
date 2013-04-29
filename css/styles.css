@@ -134,6 +134,8 @@ a:hover {
 .nav li {
   list-style: none;
   display: inline-block;
+  overflow: hidden;
+  height: auto;
 }
 .nav li a {
   display: block;
@@ -568,11 +570,12 @@ blockquote {
   right: 0;
 }
 
-.nav li ul {
+.submenu {
   position: absolute;
   margin: 0;
   padding: 0;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -586,11 +589,22 @@ blockquote {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-.nav li ul li {
+.submenu li {
   display: block !important;
   width: 100% !important;
 }
 
-.nav li:hover ul, .nav li:focus ul {
+.nav li:hover .submenu, .nav li:focus .submenu {
   opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+}
+
+.half {
+  width: 40% !important;
+  float: left;
+}
+
+input:first-child, textarea:first-child {
+  margin-right: 3%;
 }
