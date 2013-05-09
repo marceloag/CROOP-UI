@@ -60,6 +60,12 @@ input, textarea {
   text-align: center;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato";
   font-weight: 200;
@@ -168,7 +174,7 @@ a:hover {
 }
 .vnav li a {
   display: block;
-  width: 17.25em;
+  width: 100%;
   margin: 0 .5em 0 0;
   background-color: #5fc76a;
   color: #fffff8;
@@ -231,14 +237,14 @@ a:hover {
 .icons li a {
   margin: 0 .5em 0 0;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background: #443762;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
   background-color: #5fc76a;
   padding: 10px;
   color: #fffff8;
@@ -280,7 +286,7 @@ a:hover {
 }
 .iconsquare li a {
   width: 100px;
-  height: 50px;
+  height: 100px;
   margin: 0 .5em 0 0;
   display: block;
   background-color: #5fc76a;
@@ -332,7 +338,7 @@ a:hover {
 }
 .snetwork li a {
   width: 100px;
-  height: 50px;
+  height: 100px;
   margin: 0 .5em 0 0;
   display: block;
   padding: 25px 0 25px 0;
@@ -411,7 +417,7 @@ input, textarea {
   padding: 1em;
   border: 1px solid #dcdcdc;
   display: inline-block;
-  margin: 1em 0;
+  margin: .3em 0;
   font-weight: 400;
   color: #616161;
   display: block;
@@ -489,7 +495,7 @@ blockquote {
   left: 0;
   background-color: rgba(55, 159, 66, 0.8);
   font-family: 'Icons';
-  height: 82%;
+  height: 100%;
   width: 100%;
   font-size: 4em;
   color: white;
@@ -529,7 +535,7 @@ blockquote {
 }
 .contentslider ul li {
   margin: 0;
-  width: 80%;
+  width: 100%;
   padding: 10%;
   background-color: #5fc76a;
   position: relative;
@@ -601,10 +607,10 @@ blockquote {
 }
 
 .half {
-  width: 40% !important;
-  float: left;
+  width: 49% !important;
+  display: inline-block;
+  margin: 0;
 }
-
-input:first-child, textarea:first-child {
-  margin-right: 3%;
+.half:first-child {
+  margin-right: 2%;
 }

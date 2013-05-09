@@ -6,6 +6,9 @@
 @import "mixins";
 @import "layout";
 
+*{
+	@include box-sizing(border-box);
+}
 
 body{
 	font-family: $primaryfont;
@@ -78,7 +81,7 @@ a{
 		display: block;
 		a{
 			display: block;
-			width: em(300px, $fontsize) - 1.5em;
+			width: 100%;
 			margin: 0 .5em 0 0;
 			background-color: $colormenu;
 			color: (#FDEDD0 + 40);
@@ -134,7 +137,7 @@ a{
 		display: inline-block;
 		a{
 			$height:40px;
-			$circleheight:$height/2;
+			$circleheight:$height;
 			margin: 0 .5em 0 0;
 			display: block;
 			 @include circle( $circleheight, #443762);
@@ -169,7 +172,7 @@ a{
 			$height:100px;
 			$circleheight:$height/2;
 			width: $height;
-			height: $height/2;
+			height: $height;
 			margin: 0 .5em 0 0;
 			display: block;
 			background-color: $colormenu;
@@ -211,7 +214,7 @@ a{
 			$height:100px;
 			$circleheight:$height/2;
 			width: $height;
-			height: $height/2;
+			height: $height;
 			margin: 0 .5em 0 0;
 			display: block;
 			padding: $height/4 0 $height/4 0;
@@ -279,7 +282,7 @@ input{
 	padding: 1em;
 	border: 1px solid #dcdcdc;
 	display: inline-block;
-	margin: 1em 0;
+	margin: .3em 0;
 	font-weight: 400;
 	color: #616161;
 	display: block;
@@ -344,7 +347,7 @@ blockquote{
 	left: 0;
 	background-color: rgba($hovermenu, .8);
 	font-family: 'Icons';
-	height: 82%;
+	height: 100%;
 	width: 100%;
 	font-size: 4em;
 	color: white;
@@ -374,7 +377,7 @@ blockquote{
 		position: relative;
 		li{
 			margin: 0;
-			width: 80%;
+			width: 100%;
 			padding: 10%;
 			background-color: $colormenu;
 			position: relative;
@@ -430,10 +433,10 @@ blockquote{
 	visibility: visible;
 }
 .half{
-	width: 40% !important;
-	float: left;
-
-}
-input:first-child{
-		margin-right: 3%;
+	width: 49% !important;
+	display: inline-block;
+	margin: 0;
+	&:first-child{
+		margin-right: 2%;
 	}
+}
